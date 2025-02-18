@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 // View engine setup
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 app.set('views', join(__dirname, '../views'));
 
 app.use(express.urlencoded({ extended: true }));
