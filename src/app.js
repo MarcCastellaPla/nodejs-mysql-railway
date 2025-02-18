@@ -17,7 +17,7 @@ app.get("/ping", async (req, res) => {
 });
 
 app.get("/create", (req, res) => {
-  res.render('create');
+  res.render("create");
 });
 
 app.post("/create", async (req, res) => {
