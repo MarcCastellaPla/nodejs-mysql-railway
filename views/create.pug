@@ -14,11 +14,11 @@ html(lang="en")
             .card-header.bg-primary.text-white.text-center
               h2 Create New User
             .card-body
-              form(action="/create" method="POST")
-                .mb-3
-                  label.form-label(for="userName") Your Name
-                  input#userName.form-control(type="text" name="name" placeholder="Enter your name" required)
-                .d-grid
-                  button.btn.btn-primary(type="submit") Create User
+            form(action="/create" method="POST")
+              .mb-3
+                label.form-label(for="userName") Your Name
+                input#userName.form-control(type="text" name="userName" placeholder="Enter your name" required)
+              .d-grid
+                button.btn.btn-primary(type="submit") Create User
     
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")

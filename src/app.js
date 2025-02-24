@@ -21,7 +21,7 @@ app.get("/create", async (req, res) => {
 app.post("/create", async (req, res) => {
   const userName = req.body.userName;
   const result = await pool.query(
-    `INSERT INTO users($userName) VALUES ("John")`
+    `INSERT INTO users(name) VALUES (?)`, [userName]
   );
   res.json(result);
 });
